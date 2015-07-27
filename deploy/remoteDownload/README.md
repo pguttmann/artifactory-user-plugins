@@ -1,6 +1,6 @@
 <h1> remoteDownload User Plugin </h1>
 
-This plugin recieves a remote file URL and deploys the file into Artifactory.
+This plugin receives a remote file URL and deploys the file into Artifactory.
 
 <h2> Dependencies </h2>
 
@@ -28,7 +28,7 @@ The plugin can be executed with the below command:
 
 `curl -X POST -uadmin:password "http://localhost:8081/artifactory/api/plugins/execute/remoteDownload" -T conf.json`
 
-The content of conf.json should include the below paramters:
+The content of conf.json should include the below parameters:
 ```JSON
 {
 "repo": "libs-release-local",
@@ -45,4 +45,4 @@ url - The remote file URL <br>
 username - Username for basic authentication for the remote endpoint (Optional) <br>
 password - Password for basic authentication for the remote endpoint (Optional) 
 
-The above example deploys the remote file into "libs-releaes-local:my/new/path/docker.png"
+The above example deploys the remote file into "libs-release-local:my/new/path/docker.png"
